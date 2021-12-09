@@ -1,0 +1,89 @@
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-image: linear-gradient(
+    to right,
+    rgb(32, 204, 247),
+    rgb(8, 221, 221)
+  ) !important
+  ;
+}
+.appointment-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.658)),
+    url(../../../../images/appointment-bg.png);
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  background-blend-mode: darken, luminosity;
+  margin-bottom: 60px;
+}
+.common-btn {
+  background-image: linear-gradient(
+    to right,
+    rgb(22, 233, 233),
+    rgb(49, 208, 248)
+  );
+  padding: 10px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-top: 20px;
+}
+.common-btn:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(49, 208, 248),
+    rgb(22, 233, 233)
+  );
+  transition: 0.6s;
+}
+.css-1wnsr1i {
+  border: none !important;
+  border-radius: 20px;
+  width: 500px !important;
+}
+.quote {
+  background-image: url(../../../../images/quotes.png);
+  background-position: top 20px right 30px;
+  background-repeat: no-repeat;
+}
+.firstBlog {
+  background-image: linear-gradient(
+      to right,
+      rgb(14 243 213 / 77%),
+      rgb(14 203 227 / 54%)
+    ),
+    url(../../../../images/quotes.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  color: white;
+  color: white !important;
+}
+.login-Img {
+  width: 100%;
+}
+.loginbtn {
+  width: 75%;
+}
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgb(14 243 213 / 77%),
+    rgb(14 203 227 / 54%)
+  );
+}
+
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  border: 1px solid rgb(82 252 154) !important;
+}
+.navigation-link a {
+  text-decoration: none !important;
+}
+
+.hello {
+  color: #7e7d7d;
+  color: #0abdb4;
+
+  color: #31d0f8;
+}
