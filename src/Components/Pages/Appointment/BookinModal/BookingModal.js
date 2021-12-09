@@ -57,7 +57,7 @@ const BookingModal = ({
     console.log(new Date());
 
     //send date
-    fetch("http://localhost:5000/appointments", {
+    fetch("https://dry-castle-54396.herokuapp.com/appointments", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -104,7 +104,7 @@ const BookingModal = ({
               <span style={{ color: "black", fontwieght: "300" }}>
                 {date.toDateString()}
               </span>
-                 <br/>
+              <br />
               <h5 style={{ color: "black", fontwieght: "700" }}>
                 Price ${price}
               </h5>

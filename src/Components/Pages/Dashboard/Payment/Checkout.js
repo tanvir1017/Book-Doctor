@@ -13,7 +13,7 @@ const Checkout = ({ appointment }) => {
   const { user } = useAuth();
   const [clientSecret, setClientSecret] = useState("");
   useEffect(() => {
-    fetch("http://localhost:5000/create-payment-intent", {
+    fetch("https://dry-castle-54396.herokuapp.com/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -73,7 +73,7 @@ const Checkout = ({ appointment }) => {
         last4: paymentMethod.card.last4,
         transaction: paymentIntent.client_secret.slice("_secret")[0],
       };
-      const url = `http://localhost:5000/appointments/${_id}`;
+      const url = `https://dry-castle-54396.herokuapp.com/appointments/${_id}`;
       fetch(url, {
         method: "PUT",
         headers: {

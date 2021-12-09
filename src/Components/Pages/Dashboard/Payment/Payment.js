@@ -11,7 +11,7 @@ const Payment = () => {
   const { id } = useParams();
   const [appointment, setAppointment] = useState({});
   useEffect(() => {
-    fetch(`http://localhost:5000/appointments/${id}`)
+    fetch(`https://dry-castle-54396.herokuapp.com/appointments/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

@@ -93,7 +93,7 @@ const useFirebase = () => {
     return () => unSubscribe;
   }, [auth]);
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://dry-castle-54396.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
@@ -101,7 +101,7 @@ const useFirebase = () => {
   //save user by registation
   const saveUser = (email, displayName, method) => {
     const users = { email, displayName };
-    fetch(`http://localhost:5000/users`, {
+    fetch(`https://dry-castle-54396.herokuapp.com/users`, {
       method: method,
       headers: {
         "content-type": "application/json",

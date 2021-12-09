@@ -19,7 +19,7 @@ const MakeAdmin = () => {
     setOpen(false);
   };
   const handleOnSubmit = (e) => {
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://dry-castle-54396.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         authorization: `Bearer ${token}`,
