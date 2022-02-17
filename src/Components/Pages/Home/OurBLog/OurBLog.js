@@ -8,6 +8,7 @@ const OurBLog = () => {
   return (
     <Container sx={{ my: 5, p: 5 }}>
       <Typography
+        id="blog"
         variant="body1"
         sx={{
           textAlign: "left",

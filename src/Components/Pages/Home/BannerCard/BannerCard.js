@@ -5,11 +5,13 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React from "react";
+import style from "./Banner.module.css";
 
 const BannerCard = () => {
   return (
     <Box sx={{ flexGrow: 1, marginTop: "-40px", marginBottom: "60px" }}>
       <Grid
+        className={style.bannerCard}
         container
         columns={{ xs: 2, sm: 8, md: 12 }}
         spacing={{ xs: 1, md: 3 }}
@@ -26,7 +28,7 @@ const BannerCard = () => {
                   borderRadius: "0px",
                 }}
               >
-                <div
+                <Box
                   style={{
                     color: "white",
                     marginRight: "6%",
@@ -34,8 +36,8 @@ const BannerCard = () => {
                   }}
                 >
                   <i class="far fa-clock"></i>
-                </div>
-                <div>
+                </Box>
+                <Box>
                   {" "}
                   <Typography
                     sx={{ fontSize: 25, fontWeight: "700", color: "white" }}
@@ -45,7 +47,7 @@ const BannerCard = () => {
                   <Typography sx={{ color: "white", fontSize: "13px" }}>
                     Book now
                   </Typography>
-                </div>
+                </Box>
               </CardContent>
             </Card>
           </Container>
@@ -64,7 +66,7 @@ const BannerCard = () => {
                   borderRadius: "0px",
                 }}
               >
-                <div
+                <Box
                   style={{
                     color: "white",
                     marginRight: "6%",
@@ -72,8 +74,8 @@ const BannerCard = () => {
                   }}
                 >
                   <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div>
+                </Box>
+                <Box>
                   {" "}
                   <Typography
                     sx={{ fontSize: 25, fontWeight: "700", color: "white" }}
@@ -83,7 +85,7 @@ const BannerCard = () => {
                   <Typography sx={{ color: "white", fontSize: "13px" }}>
                     Brooklyn, United states
                   </Typography>
-                </div>
+                </Box>
               </CardContent>
             </Card>
           </Container>
@@ -96,12 +98,11 @@ const BannerCard = () => {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  background: "#0abdb4",
-                  //   padding: "5px",
+                  background: "#20ccf7",
                   borderRadius: "0px",
                 }}
               >
-                <div
+                <Box
                   style={{
                     color: "white",
                     marginRight: "6%",
@@ -109,8 +110,8 @@ const BannerCard = () => {
                   }}
                 >
                   <i class="fas fa-phone-alt"></i>
-                </div>
-                <div>
+                </Box>
+                <Box>
                   {" "}
                   <Typography
                     sx={{ fontSize: 25, fontWeight: "700", color: "white" }}
@@ -120,7 +121,7 @@ const BannerCard = () => {
                   <Typography sx={{ color: "white", fontSize: "13px" }}>
                     +880 1784070569
                   </Typography>
-                </div>
+                </Box>
               </CardContent>
             </Card>
           </Container>

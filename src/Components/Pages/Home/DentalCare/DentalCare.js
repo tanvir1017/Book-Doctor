@@ -1,12 +1,13 @@
 import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import treatment from "../../../../images/treatment.png";
+import style from "./DentalCare.module.css";
 
 const DentalCare = () => {
   return (
     <Container sx={{ my: 4 }}>
       <Grid container sx={{ textAlign: "left" }}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} className={style.dentalCareImgSection}>
           <img width="70%" src={treatment} alt="" />
         </Grid>
         <Grid item xs={12} md={6} sx={{ margin: "auto" }}>

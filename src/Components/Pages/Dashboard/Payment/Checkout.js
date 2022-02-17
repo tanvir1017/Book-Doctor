@@ -2,7 +2,6 @@ import { LinearProgress } from "@mui/material";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useEffect, useState } from "react";
 import useAuth from "../../../../Hooks/useAuth";
-import "./style.css";
 
 const Checkout = ({ appointment }) => {
   const { price, patientName, _id } = appointment;
@@ -64,7 +63,6 @@ const Checkout = ({ appointment }) => {
     } else {
       setError("");
       setSuccess("Payment recieved");
-      console.log(paymentIntent);
       setIsLoading(false);
       // save to db
       const payment = {

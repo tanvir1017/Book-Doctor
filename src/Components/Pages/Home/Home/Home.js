@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Shared/Footer/Footer";
 import Appointment from "../Appointment/Appointment";
 import Banner from "../Banner/Banner";
 import BannerCard from "../BannerCard/BannerCard";
@@ -11,14 +12,15 @@ import Services from "../Services/Services";
 const Home = () => {
   return (
     <div>
-      <Banner></Banner>
+      <Banner />
       <BannerCard />
-      <Services></Services>
+      <Services />
       <DentalCare />
-      <Appointment></Appointment>
-      <PatientsSays></PatientsSays>
-      <OurBLog></OurBLog>
-      <ContactUs></ContactUs>
+      <Appointment />
+      <PatientsSays />
+      <OurBLog />
+      <ContactUs />
+      <Footer />
     </div>
   );
 };

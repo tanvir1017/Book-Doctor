@@ -38,7 +38,6 @@ const useFirebase = () => {
           });
         setError("");
         history.replace("/");
-        console.log(result.user);
       })
       .catch((error) => setError(error.message))
       .finally(() => setIsLoading(false));
@@ -83,7 +82,6 @@ const useFirebase = () => {
         setUser(user);
         getIdToken(user).then((idToken) => {
           setToken(idToken);
-          console.log(idToken);
         });
       } else {
         setUser({});
